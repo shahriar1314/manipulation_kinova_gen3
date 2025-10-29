@@ -56,6 +56,10 @@ KinovaArmI::KinovaArmI(GenericWorker *_worker, const size_t id): worker(_worker)
 		[this](auto a, auto b) { return worker->KinovaArm_setCenterOfTool(a, b); }
 	};
 
+	setGripperPosHandlers = {
+		[this](auto a) { return worker->KinovaArm_setGripperPos(a); }
+	};
+
 }
 
 
@@ -187,6 +191,20 @@ void KinovaArmI::setCenterOfTool(RoboCompKinovaArm::TPose pose, RoboCompKinovaAr
 		 setCenterOfToolHandlers[id](pose, referencedTo);
 	else
 		throw std::out_of_range("Invalid setCenterOfTool id: " + std::to_string(id));
+
+}
+
+bool KinovaArmI::setGripperPos(float pos, const Ice::Current&)
+{
+
+    #ifdef HIBERNATION_ENABLED
+		worker->hibernationTick();
+	#endif
+    
+	if (id < setGripperPosHandlers.size())
+		return  setGripperPosHandlers[id](pos);
+	else
+		throw std::out_of_range("Invalid setGripperPos id: " + std::to_string(id));
 
 }
 

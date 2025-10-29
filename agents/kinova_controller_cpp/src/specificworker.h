@@ -66,6 +66,7 @@ public:
 	void KinovaArm_moveJointsWithSpeed(RoboCompKinovaArm::TJointSpeeds speeds);
 	void KinovaArm_openGripper();
 	void KinovaArm_setCenterOfTool(RoboCompKinovaArm::TPose pose, RoboCompKinovaArm::ArmJoints referencedTo);
+	bool KinovaArm_setGripperPos(float pos);
 
 
 public slots:
@@ -124,7 +125,6 @@ private:
 	* @brief Object storing the state of the gripper
 	*/
 	RoboCompKinovaArm::TGripper gripper{};
-
 
 	/**
 	* @brief Object storing the state of the tool

@@ -209,6 +209,14 @@ void SpecificWorker::KinovaArm_setCenterOfTool(RoboCompKinovaArm::TPose pose, Ro
 
 }
 
+bool SpecificWorker::KinovaArm_setGripperPos(float pos)
+{
+	bool ret{};
+	//implementCODE
+
+	return ret;
+}
+
 
 
 /**************************************/

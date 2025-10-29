@@ -2,7 +2,7 @@
 Proxies.Contactile = "contactile:tcp -h localhost -p 18761"
 
 # Endpoints for implements interfaces
-Endpoints.KinovaArm = "tcp -p 17955"
+Endpoints.KinovaArm = "tcp -p 10005"
 
 Agent.id = 1 # Change id
 Agent.name = "kinova_controller_cpp"

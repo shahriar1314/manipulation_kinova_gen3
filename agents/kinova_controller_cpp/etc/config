@@ -17,7 +17,7 @@ Period.Compute = 50
 Period.Emergency = 500
 
 ip = "192.168.50.10"
-Ice.Warn.Connections = " ""0"
-Ice.Trace.Network = " ""0"
-Ice.Trace.Protocol = " ""0"
-Ice.MessageSizeMax = " ""20004800"
+Ice.Warn.Connections = "0"
+Ice.Trace.Network = "0"
+Ice.Trace.Protocol = "0"
+Ice.MessageSizeMax = "20004800"

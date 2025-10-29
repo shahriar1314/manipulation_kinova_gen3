@@ -77,6 +77,7 @@ public:
 	virtual void KinovaArm_moveJointsWithSpeed(RoboCompKinovaArm::TJointSpeeds speeds) = 0;
 	virtual void KinovaArm_openGripper() = 0;
 	virtual void KinovaArm_setCenterOfTool(RoboCompKinovaArm::TPose pose, RoboCompKinovaArm::ArmJoints referencedTo) = 0;
+	virtual bool KinovaArm_setGripperPos(float pos) = 0;
 
 
 protected:
