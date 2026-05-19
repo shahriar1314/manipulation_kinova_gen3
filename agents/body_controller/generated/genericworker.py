@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
-#    Copyright (C) 20252025 by YOUR NAME HERE
+#    Copyright (C) 20262026 by YOUR NAME HERE
 #
 #    This file is part of RoboComp
 #
@@ -39,6 +39,9 @@ class GenericWorker(QtWidgets.QMainWindow):
     def __init__(self, mprx, configData):
         super(GenericWorker, self).__init__()
 
+        self.kinovaarm_proxy = mprx["KinovaArm"]
+        self.kinovaarm1_proxy = mprx["KinovaArm1"]
+        self.omnirobot_proxy = mprx["OmniRobot"]
         self.kinovaarm_proxy = mprx["KinovaArm"]
         self.kinovaarm1_proxy = mprx["KinovaArm1"]
         self.omnirobot_proxy = mprx["OmniRobot"]

@@ -7,7 +7,9 @@ git clone https://github.com/jcalderon12/robotics-toolbox-python.git
 pip install .
 
 wget https://artifactory.kinovaapps.com/artifactory/generic-public/kortex/API/2.6.0/kortex_api-2.6.0.post3-py3-none-any.whl
+
 pip install kortex_api-2.6.0.post3-py3-none-any.whl
+
 pip install protobuf==3.20.3 swift-sim numpy==1.26.0 statsmodels qpsolvers[open_source_solvers] websockets==10.4
 
 

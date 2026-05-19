@@ -12,13 +12,10 @@ Endpoints.FullPoseEstimationPubPrefix = ""
 Endpoints.JoystickAdapterTopic = "tcp -p 0"
 Endpoints.JoystickAdapterPrefix = ""
 
-kinova_right_arm_ip = "192.168.50.11"
-kinova_left_arm_ip = "192.168.50.10"
-
 # Change id
 Agent.id = 999
 Agent.name = "body_controller"
-Agent.configFile = "kinova2.json"
+Agent.configFile = ""
 
 ViewAgent.tree = true
 ViewAgent.graph = true
@@ -33,8 +30,9 @@ Ice.Trace.Protocol = "0"
 Ice.MessageSizeMax = "20004800"
 
 
-useRTPose = False
-automatic = True
-simulated = 0 #0:swift, 1:webots, 2:real
-directKinematic = False
+useRTPose = false
+automatic = false
+simulated = false
+directKinematic = false
+base = false
 
