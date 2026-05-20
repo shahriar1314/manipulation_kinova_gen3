@@ -207,7 +207,7 @@ class SpecificWorker(GenericWorker):
             self.task_state = [TaskState.IDLE]*2  # Current task state for each arm
             self.task_pick_height = [None]*2  # Height at which the object was picked
             self.place_position = [None]*2  # Position where to place the object
-            self.place_offset = 1.5  # Distance to move sideways (meters)
+            self.place_offset = 1  # Distance to move sideways (meters)
             self.gripper_closing_time = [0]*2  # Timer for gripper closing
             self.gripper_timeout = 1.0  # Time to wait for gripper to close (seconds)
             #endregion
